@@ -22,7 +22,7 @@ public class Palindromo {
         return true;
     }
 
-    static boolean pegaTamanhoDaString(String str) // Pega tamanho da String || Começo e Final da mesma
+    static boolean pegaTamanhoDaString(String str) 
     {
         int n = str.length();
 
