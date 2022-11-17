@@ -5,19 +5,19 @@ public class Palindromo {
         String str = "geeg";
 
         if (pegaTamanhoDaString(str))
-            System.out.println("Yes");
+            System.out.println("É um palindromo");
         else
-            System.out.println("No");
+            System.out.println("Não é um palindromo");
     }
 
-    static boolean isPalRec(String str, int s, int e)
+    static boolean verificaPalindromo(String str, int s, int e)
     {
         if (s == e)
             return true;
         if ((str.charAt(s)) != (str.charAt(e)))
             return false;
         if (s < e + 1)
-            return isPalRec(str, s + 1, e - 1);
+            return verificaPalindromo(str, s + 1, e - 1);
 
         return true;
     }
@@ -29,6 +29,6 @@ public class Palindromo {
         if (n == 0)
             return true;
 
-        return isPalRec(str, 0, n - 1);
+        return verificaPalindromo(str, 0, n - 1);
     }
 }
