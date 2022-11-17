@@ -2,7 +2,7 @@ public class Palindromo {
 
     public static void main(String args[])
     {
-        String str = "geeg";
+        String str = "arara";
 
         if (pegaTamanhoDaString(str))
             System.out.println("É um palindromo");
